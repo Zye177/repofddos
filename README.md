@@ -13,3 +13,5 @@ $python2 repofddos.py
 $python2 repofddos.py "url"
 
 untuk menghentikan ddos "ctrl+z"
+
+!! Kelemahan jika mengalami disconnect website kembali normal !!
