@@ -49,7 +49,7 @@ def useragent_list():
 def referer_list():
 	global headers_referers
 	headers_referers.append('http://www.google.com/?q=')
-	headers_referers.append('https://zona-bucin.repl.co')
+	headers_referers.append('https://zona-bucin.vanaya.repl.co')
 	headers_referers.append('http://' + host + '/')
 	return(headers_referers)
 	
