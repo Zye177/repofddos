@@ -1,5 +1,4 @@
 # repofddos
-# -?- EVO REPOEBLIC OF DDOS -?-
 
 $pkg install python2 -y
 
