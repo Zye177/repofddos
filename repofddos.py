@@ -52,7 +52,7 @@ def referer_list():
 	headers_referers.append('https://zona-bucin.vanaya.repl.co')
 	headers_referers.append('http://' + host + '/')
 	return(headers_referers)
-	
+
 # builds random ascii string
 def buildblock(size):
 	out_str = ''
@@ -163,3 +163,28 @@ else:
 			t.start()
 		t = MonitorThread()
 		t.start()
+
+# Loading
+import itertools
+import threading
+import time
+import sys
+
+done = False
+
+
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rloading ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\rProcessing\n')
+
+t = threading.Thread(target=animate)
+t.start()
+
+
+time.sleep(10)
+done = True
