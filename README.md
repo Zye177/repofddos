@@ -4,7 +4,7 @@ Tools ini dibuat untuk ddos web terlarang jadi harap untuk menggunakan sebijak m
 ```
 ![Sanz](https://i.postimg.cc/q7j7p4tp/images.jpg)
 > Script ini sewaktu-waktu mungkin bisa tidak berfungsi semestinya jadi jangan salahkan mimin ya.
-## How to it?
+## Code penggunaan. 
 ```python
 $ pkg install python2 -y
 $ termux-setup-storage
