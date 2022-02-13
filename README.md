@@ -1,15 +1,20 @@
-# repofddos
-
-$pkg install python2 -y
-
-$pkg install git
-
-$git clone https://github.com/Zye177/repofddos
-
-$cd repofddos
-
-$python2 repofddos.py
-
-$python2 repofddos.py "url"
-
+# -?- REPOFDDOS -?-
+```
+Tools ini dibuat untuk ddos web terlarang jadi harap untuk menggunakan sebijak mungkin
+```
+![Sanz](https://i.postimg.cc/NFkHZffK/images.jpg)
+> Script ini sewaktu-waktu mungkin bisa tidak berfungsi semestinya jadi jangan salahkan mimin ya.
+## How to it?
+```python
+$ pkg install python2 -y
+$ termux-setup-storage
+$ cd /sdcard
+$ cd <lokasi file>
+$ python2 evo.py
+$ python2 evo.py <url>
 untuk menghentikan ddos "ctrl+z"
+```
+## Support Mimin
+<b>• [instagram](https://www.instagram.com/exy.zy/)
+</b>
+<br>
